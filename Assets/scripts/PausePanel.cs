@@ -40,7 +40,8 @@ public class PausePanel : MonoBehaviour
     //Reloads the Level
     public void Replay()
     {
-        SceneManager.LoadScene("Scene1");
+        Scene scene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(scene.name);
     }
 
     //controls the pausing of the scene
